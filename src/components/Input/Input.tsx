@@ -20,7 +20,6 @@ const Input: React.FC<InputProps> = ({
 			)}
 		>
 			<input
-				type="text"
 				className="placeholder:text-text-2 block w-full border-none text-sm outline-none disabled:cursor-not-allowed"
 				disabled={disabled}
 				{...props}
