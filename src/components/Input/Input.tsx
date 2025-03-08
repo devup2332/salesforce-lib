@@ -5,12 +5,18 @@ interface InputProps extends ComponentProps<"input"> {
 	Icon?: JSX.Element;
 }
 
-const Input: React.FC<InputProps> = ({ Icon, disabled, ...props }) => {
+const Input: React.FC<InputProps> = ({
+	Icon,
+	disabled,
+	className,
+	...props
+}) => {
 	return (
 		<div
 			className={cn(
 				"border-stroke-1 border-1 py-2 px-4 rounded-md group w-md flex",
 				disabled && "cursor-not-allowed",
+				className,
 			)}
 		>
 			<input
