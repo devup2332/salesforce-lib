@@ -1,3 +1,4 @@
+import EmailIcon from "@/components/icons/EmailIcon";
 import Input from "@/components/Input/Input";
 import withColorSchema from "@/decorators/withColorSchema";
 import { Meta, StoryObj } from "@storybook/react";
@@ -28,5 +29,6 @@ export const Text: Story = {
   args: {
     placeholder: "Type something",
     disabled: false,
+    Icon: <EmailIcon className="input--icon" />,
   },
 };

@@ -1,0 +1,8 @@
+.dropdown-container {
+  background-color: var(--primary-200);
+}
+.dropDown-item {
+  &:hover {
+    background-color: red;
+  }
+}

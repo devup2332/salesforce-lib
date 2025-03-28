@@ -1,0 +1,55 @@
+.button--icon {
+  border-radius: 100%;
+  background: var(--primary-200);
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.15s ease;
+
+  &:hover {
+    background: var(--primary-300);
+  }
+}
+
+.button--outlined {
+  border: 1px solid var(--primary-200);
+  cursor: pointer;
+  background-color: transparent;
+  padding: 12px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+
+  &:hover {
+    background-color: var(--primary-200);
+  }
+}
+
+.button--filled {
+  background-color: var(--primary-400);
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  &:hover {
+    background-color: var(--primary-600);
+  }
+}
+
+.button--ghost {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: var(--primary-800);
+  transition: background-color 0.15s ease;
+
+  &:hover {
+    background-color: var(--primary-200);
+  }
+}

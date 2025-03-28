@@ -17,7 +17,6 @@ const meta: Meta<StoryProps> = {
   },
   args: {
     variant: "filled",
-    children: "Click me",
   },
   decorators: [withColorSchema],
 };
@@ -29,19 +28,26 @@ type Story = StoryObj<StoryProps>;
 export const Filled: Story = {
   args: {
     variant: "filled",
-    children: "Click me",
+    children: "Filled",
   },
 };
 
 export const Outlined: Story = {
   args: {
     variant: "outlined",
-    children: "Click me",
+    children: "Outlined",
   },
 };
 export const Icon: Story = {
   args: {
     variant: "icon",
     children: "🚀",
+  },
+};
+
+export const Ghost: Story = {
+  args: {
+    variant: "ghost",
+    children: "Ghost",
   },
 };

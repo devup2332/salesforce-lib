@@ -1,27 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import "tailwindcss";
+@import "@radix-ui/themes/styles.css";
 @import "./theme.css";
-
-@theme {
-  --font-main: "Montserrat";
-
-  --color-primary: var(--primary);
-  --color-primary-100: var(--primary-100);
-  --color-primary-200: var(--primary-200);
-  --color-primary-300: var(--primary-300);
-  --color-primary-400: var(--primary-400);
-  --color-primary-500: var(--primary-500);
-  --color-primary-600: var(--primary-600);
-  --color-primary-700: var(--primary-700);
-  --color-primary-800: var(--primary-800);
-  --color-primary-900: var(--primary-900);
-
-  --text-3xl: 32px;
-  --spacing-input: 42px;
-}
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 button {

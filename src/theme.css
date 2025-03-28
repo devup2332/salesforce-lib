@@ -1,14 +1,15 @@
 :root {
-  --primary-100-light: #f4f4f5;
-  --primary-200-light: #c8c8c8;
-  --primary-300-light: #adadad;
-  --primary-400-light: #939393;
-  --primary-500-light: #7a7a7a;
-  --primary-600-light: #626262;
-  --primary-700-light: #4b4b4b;
-  --primary-800-light: #353535;
-  --primary-900-light: #202020;
-  --primary-light: #0d0d0d;
+  --primary-50-light: #f8fafc;
+  --primary-100-light: #f1f5f9;
+  --primary-200-light: #e2e8f0;
+  --primary-300-light: #cbd5e1;
+  --primary-400-light: #94a3b8;
+  --primary-500-light: #64748b;
+  --primary-600-light: #475569;
+  --primary-700-light: #334155;
+  --primary-800-light: #1e293b;
+  --primary-900-light: #0f172a;
+  --primary-950-light: #0f172a;
 
   --primary-100-dark: #09090b;
   --primary-200-dark: #27272a;
@@ -23,6 +24,7 @@
 }
 
 .container.light {
+  --primary-50: var(--primary-50-light);
   --primary-100: var(--primary-100-light);
   --primary-200: var(--primary-200-light);
   --primary-300: var(--primary-300-light);
@@ -32,9 +34,10 @@
   --primary-700: var(--primary-700-light);
   --primary-800: var(--primary-800-light);
   --primary-900: var(--primary-900-light);
-  --primary: var(--primary-light);
+  --primary-950: var(--primary-950-light);
 
-  background-color: #ffffff;
+  background-color: #fff;
+  color-scheme: light;
 }
 .container.dark {
   --primary-100: var(--primary-100-dark);
@@ -48,7 +51,6 @@
   --primary-900: var(--primary-900-dark);
   --primary: var(--primary-dark);
 
-  background-color: #000000;
+  background-color: #000;
   color-scheme: dark;
 }
-

@@ -1,4 +1,5 @@
 import { DecoratorFunction } from "storybook/internal/types";
+import { Theme } from "@radix-ui/themes";
 
 const withColorSchema: DecoratorFunction = (Story, context) => {
   const { scheme } = context.globals;
@@ -7,13 +8,21 @@ const withColorSchema: DecoratorFunction = (Story, context) => {
   if (scheme === "light") {
     document.documentElement.classList.remove("dark");
     document.documentElement.classList.add("light");
-    return <Story />;
+    return (
+      <Theme>
+        <Story />
+      </Theme>
+    );
   }
 
   if (scheme === "dark") {
     document.documentElement.classList.remove("light");
     document.documentElement.classList.add("dark");
-    return <Story />;
+    return (
+      <Theme className="h-fit">
+        <Story />
+      </Theme>
+    );
   }
 };
 

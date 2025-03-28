@@ -1,38 +1,28 @@
 import { cn } from "@/utils/cn";
-import { cva, VariantProps } from "class-variance-authority";
-import React, { ComponentProps, ReactNode } from "react";
+import React, { ComponentProps } from "react";
+import "./Button.styles.css";
 
-const variants = cva(
-  "px-4 py-2 rounded-md block w-fit flex items-center justify-center cursor-pointer transition-colors font-main",
-  {
-    variants: {
-      variant: {
-        filled: "bg-primary text-primary-100 px-4 py-2 hover:bg-primary-800",
-        outlined:
-          "border-primary-300 border-[1px] text-primary hover:bg-primary-100",
-        icon: "p-2 hover:bg-primary-100",
-      },
-    },
-    defaultVariants: {
-      variant: "filled",
-    },
-  },
-);
+type Variant = "icon" | "outlined" | "filled" | "ghost";
 
-interface ButtonProps
-  extends ComponentProps<"button">,
-    VariantProps<typeof variants> {
-  children?: ReactNode;
+export interface ButtonProps extends ComponentProps<"button"> {
+  variant?: Variant;
 }
 
+const variants: Record<Variant, string> = {
+  icon: "button--icon",
+  outlined: "button--outlined",
+  filled: "button--filled",
+  ghost: "button--ghost",
+};
+
 const Button: React.FC<ButtonProps> = ({
-  variant,
+  variant = "filled",
   className,
   children,
   ...props
 }) => {
   return (
-    <button className={cn(variants({ variant }), className)} {...props}>
+    <button className={cn(variants[variant], className)} {...props}>
       {children}
     </button>
   );
