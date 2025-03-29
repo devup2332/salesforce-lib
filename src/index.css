@@ -1,12 +1,4 @@
 @import "@radix-ui/themes/styles.css";
-@import "./theme.css";
+@import "tailwindcss";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-button {
-  outline: none;
-}
+@custom-variant dark (&:where(.dark, .dark *));

@@ -1,30 +1,31 @@
 html.light {
-  --primary-100: var(--primary-100-light);
-  --primary-200: var(--primary-200-light);
-  --primary-300: var(--primary-300-light);
-  --primary-400: var(--primary-400-light);
-  --primary-500: var(--primary-500-light);
-  --primary-600: var(--primary-600-light);
-  --primary-700: var(--primary-700-light);
-  --primary-800: var(--primary-800-light);
-  --primary-900: var(--primary-900-light);
-  --primary: var(--primary-light);
+  --lib-primary-50: var(--primary-50-light);
+  --lib-primary-100: var(--primary-100-light);
+  --lib-primary-200: var(--primary-200-light);
+  --lib-primary-300: var(--primary-300-light);
+  --lib-primary-400: var(--primary-400-light);
+  --lib-primary-500: var(--primary-500-light);
+  --lib-primary-600: var(--primary-600-light);
+  --lib-primary-700: var(--primary-700-light);
+  --lib-primary-800: var(--primary-800-light);
+  --lib-primary-900: var(--primary-900-light);
+  --lib-primary-950: var(--primary-950-light);
 
   color-scheme: light;
   background-color: #ffffff;
 }
 
 html.dark {
-  --primary-100: var(--primary-100-dark);
-  --primary-200: var(--primary-200-dark);
-  --primary-300: var(--primary-300-dark);
-  --primary-400: var(--primary-400-dark);
-  --primary-500: var(--primary-500-dark);
-  --primary-600: var(--primary-600-dark);
-  --primary-700: var(--primary-700-dark);
-  --primary-800: var(--primary-800-dark);
-  --primary-900: var(--primary-900-dark);
-  --primary: var(--primary-dark);
+  --lib-primary-100: var(--primary-100-dark);
+  --lib-primary-200: var(--primary-200-dark);
+  --lib-primary-300: var(--primary-300-dark);
+  --lib-primary-400: var(--primary-400-dark);
+  --lib-primary-500: var(--primary-500-dark);
+  --lib-primary-600: var(--primary-600-dark);
+  --lib-primary-700: var(--primary-700-dark);
+  --lib-primary-800: var(--primary-800-dark);
+  --lib-primary-900: var(--primary-900-dark);
+  --lib-primary: var(--primary-dark);
 
   background-color: #000000;
   color-scheme: dark;

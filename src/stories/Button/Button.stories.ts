@@ -28,14 +28,14 @@ type Story = StoryObj<StoryProps>;
 export const Filled: Story = {
   args: {
     variant: "filled",
-    children: "Filled",
+    children: "Click me",
   },
 };
 
 export const Outlined: Story = {
   args: {
     variant: "outlined",
-    children: "Outlined",
+    children: "Click me",
   },
 };
 export const Icon: Story = {
@@ -48,6 +48,6 @@ export const Icon: Story = {
 export const Ghost: Story = {
   args: {
     variant: "ghost",
-    children: "Ghost",
+    children: "Click me",
   },
 };

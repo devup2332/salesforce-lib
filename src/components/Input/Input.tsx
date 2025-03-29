@@ -1,6 +1,6 @@
 import { cn } from "@/utils/cn";
+import {} from "class-variance-authority";
 import React, { ComponentProps, JSX } from "react";
-import "./Input.styles.css";
 
 interface InputProps extends ComponentProps<"input"> {
   Icon?: JSX.Element;
@@ -14,8 +14,19 @@ const Input: React.FC<InputProps> = ({
   ...props
 }) => {
   return (
-    <div className={cn("input--container", className)}>
-      <input className={cn("input--field", inputClassName)} {...props} />
+    <div
+      className={cn(
+        "rounded-md text-sm flex gap-4 justify-between h-10 outline-none border-[1px] border-gray-300 px-4 w-lg items-center",
+        className,
+      )}
+    >
+      <input
+        className={cn(
+          "placeholder:text-gray-500 h-full flex-1",
+          inputClassName,
+        )}
+        {...props}
+      />
       {Icon && Icon}
     </div>
   );

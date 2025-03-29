@@ -29,6 +29,6 @@ export const Text: Story = {
   args: {
     placeholder: "Type something",
     disabled: false,
-    Icon: <EmailIcon className="input--icon" />,
+    Icon: <EmailIcon className="text-gray-600" />,
   },
 };
